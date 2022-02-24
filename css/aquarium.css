@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+html, body {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+} */
+#wrap {
+    width: 100%;
+    border: 8px solid #fff;
+}
+#wrap {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+/* Header */
+.header {
+    padding: 24px;
+    /* 포지션 위치기준값 */
+    position: relative;
+}
+.header h1 {
+    padding-top: 4px;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -1;
+    font-weight: 600;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-85px);
+    /* top: 24px; */
+    z-index: 1;
+}
+/* Hamburger Menu */
+.header input[id="menuicon"]{
+    display: none;
+}
+/* A. 그리기 */
+.header input[id="menuicon"]+label{
+    display: block;
+    width: 24px;
+    height: 14px;
+    cursor: pointer;
+    /* 포지션 위치기준값 */
+    position: relative;
+}
+.header input[id="menuicon"]+label span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    /* 포지션 */
+    position: absolute;
+    z-index: 100;
+    transition: all 0.3s;
+
+}
+.header input[id="menuicon"]+label span:nth-child(1){
+    top: 0;
+}
+.header input[id="menuicon"]+label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header input[id="menuicon"]+label span:nth-child(3){
+    bottom: 0;
+}
+/* B. X */
+input[id="menuicon"]:checked +label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked +label span:nth-child(2){
+    opacity: 0;
+}
+input[id="menuicon"]:checked +label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+/* C. GNB 슬라이딩 */
+.header nav[class="mobile_gnb"]{
+    width: 250px;
+    height: 100%;
+    background: #1D496A;
+    /* 포지션 */
+    position: absolute;
+    position: fixed;
+    left: -258px;
+    top: 0;
+    z-index: 90;
+    transition: all 0.3s;
+}
+input[id="menuicon"]:checked +label+nav {
+    left: 8px;
+}
+/* CSS */
+.header .mobile_gnb {
+    padding-top: 124px;
+    font-size: 1.2rem;
+    font-size: 18px;
+}
+.header .mobile_gnb .gnb>li {
+    height: 48px;
+    line-height: 48px;
+    padding-left: 24px;
+}
+.header .mobile_gnb .gnb>li:hover {
+    background: #fff;
+    transition: all 0.4s;
+}
+.header .mobile_gnb .gnb>li>a {
+    display: block;
+    color: #fff;
+    letter-spacing: -1px;
+}
+.header .mobile_gnb .gnb>li>a:hover {
+    color: #000;
+    transition: all 0.3s;
+}
+.header .mobile_gnb .gnb>li:last-child:hover{
+    background: none;
+    color: #fff;
+}
+.header .mobile_gnb .gnb>li>:last-child>a:hover {
+    color: #fff;
+}
+/* SNS */
+.header .mobile_gnb .sns {
+    display: table;
+    width: 234px;
+    padding-left: 24px;
+}
+.header .mobile_gnb .sns li {
+    display: table-cell;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    padding-top: 11px;
+}
+.header .mobile_gnb .sns i {
+    font-size: 1.2rem;
+    color: #fff;
+}
+.header .mobile_gnb .sns .facebook {background-color: #2b4b82;}
+.header .mobile_gnb .sns .facebook:hover {background-color: #3c5a98;}
+.header .mobile_gnb .sns .twitter {background-color: #56acef;}
+.header .mobile_gnb .sns .twitter:hover {background-color: #2898f0;}
+.header .mobile_gnb .sns .instagram {background-color: #5cbf4a;}
+.header .mobile_gnb .sns .instagram:hover {background-color: #2eb116;}
+
+/* 20220224 */
+.header .mobile_gnb .sns {
+    display: none;
+}
+
+/* Contents */
+#contents {
+    width: 100%;
+}
+section .button {
+    width: 290px;
+    height: 40px;
+    background: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+    z-index: 1;
+}
+section .button button {
+    width: 290px;
+    height: 48px;
+    background: #4CBCD1;
+}
+section .button button a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00405E;
+}
+
+/* Footer */
+footer {
+    background: #163852;
+    padding-top: 40px;
+    text-align: center;
+}
+footer p {
+    margin-bottom: 56px;
+}
+footer .copyright {
+    padding-bottom: 24px;
+    color: #fff;
+    font-weight: 300;
+}
+footer .copyright p {
+    font-size: 0.825rem;
+    color: #ccc;
+    margin-bottom: 24px;
+}
+footer .copyright p:last-child {
+    color: #666666;
+    font-size: 0.75rem;
+}
