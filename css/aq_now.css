@@ -2,20 +2,37 @@
 #wrap {
     width: 100%;
 }
+/* 20220225 Banner 수정 추가 작업*/
+.banner {
+    background-color: #000;
+}
+.banner .bannerBgc {
+    width: 300px;
+    /* 플렉스 */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+.banner .bannerBgc>p:first-child {
+    line-height: 44px;
+}
+.banner .bannerBgc>p:first-child img {
+    vertical-align: middle;
+}
+.banner .bannerBgc>p:last-child {
+    line-height: 44px;
+    cursor: pointer;
+}
+.banner .bannerBgc>p:last-child img {
+    vertical-align: middle;
+}
 /* Header */
 .header {
     height: 60px;
 }
-.header .banner {
-    /* position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1; */
-    display: none;
-}
-.header .banner img {
-    width: 100%;
-}
+
 /* Contents */
 /* Hover 검색창 */
 #contents form {

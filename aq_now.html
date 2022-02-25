@@ -44,7 +44,13 @@
 
     <!-- 프로젝트 페이지 SCRIPT -->
     <script src="./js/calHeight.js"></script>
-
+    <script>
+        $(function(){
+            $('.banner .bannerBgc p').eq(-1).click(function(){
+                $('.banner').stop().slideUp();
+            });
+        });
+    </script>
     <style>
         #more {
             display: none;
@@ -52,6 +58,18 @@
     </style>
 </head>
 <body>
+    <!-- Banner -->
+    <aside class="banner">
+        <div class="bannerBgc">
+            <p>
+                <img src="./images/banner02.png" alt="배너이미지">
+            </p>
+            <p>
+                <img src="./images/btn_close_f5.png" alt="X자버튼">
+            </p>
+        </div>
+    </aside>
+    <!-- /Banner -->
     <div id="wrap">
         <!-- Header -->
         <header class="header">
@@ -77,11 +95,6 @@
                     <li class="instagram"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </nav>
-            <!-- Banner -->
-            <aside class="banner">
-                <img src="./images/banner.png" alt="배너이미지">
-            </aside>
-            <!-- /Banner -->
         </header>
         <!-- /Header -->
         <!-- Contents -->
