@@ -5,6 +5,7 @@
 /* 20220225 Banner 수정 추가 작업*/
 .banner {
     background-color: #000;
+    height: 46px;
 }
 .banner .bannerBgc {
     width: 300px;
@@ -16,13 +17,13 @@
     margin-left: 60px;
 }
 .banner .bannerBgc>p:first-child {
-    line-height: 44px;
+    line-height: 46px;
 }
 .banner .bannerBgc>p:first-child img {
     vertical-align: middle;
 }
 .banner .bannerBgc>p:last-child {
-    line-height: 44px;
+    line-height: 46px;
     cursor: pointer;
 }
 .banner .bannerBgc>p:last-child img {
