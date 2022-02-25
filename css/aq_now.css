@@ -85,15 +85,15 @@
 .search_container input#search:active {
     background:#1D496A;
 }
-.search_container input#search:hover .icon,
-.search_container input#search:focus .icon,
-.search_container input#search:active .icon {
+.search_container input#search:hover .icon i,
+.search_container input#search:focus .icon i,
+.search_container input#search:active .icon i {
     color: #fff;
 }
 
 /* Section Contents */
 #contents .promotion {
-    margin-top: 16px;
+    margin-top: 8px;
     padding: 0 10px;
     color: #fff;
     font-size: 0.875rem;
@@ -107,7 +107,7 @@
 #contents .promotion p+p {
     font-weight: normal;
     font-size: 16px;
-    margin-top: 14px;
+    margin-top: 8px;
 }
 /* Section YOUTUBE */
 #contents .youtube {
@@ -119,7 +119,7 @@
 }
 /* Section 전시생물 소개 */
 #contents .aqnow {
-    margin-top: 16px;
+    margin-top: 10px;
     padding: 0 10px;
 }
 #contents .aqnow h3 {
@@ -129,16 +129,15 @@
     line-height: 1.4;
     text-align: center;
     text-shadow: 0 0 3px rgba(0,0,0,0.7);
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 #contents .aqnow p {
-    margin-top: 20px;
     text-align: center;
 }
 #contents .aqnow p button {
     display: inline-block;
     /* width: 140px; */
-    padding: 14px 10px;
+    padding: 10px 10px;
     background: #1d496a;
     border: none;
     border-radius: 4px;

@@ -58,9 +58,3 @@
 #contents .fee table tr:last-child td {
     padding: 8px 8px;
 }
-
-#contents .info p {
-    font-size: 14px;
-    color: #ccc;
-    padding-bottom: 8px;
-}

@@ -17,9 +17,3 @@ function myFunction(){
         btnText.css({cursor:'pointer'});
     }
 };
-
-$('#contents .search_container').hover(function(){
-    $(this).children('i').css({backGround:'#fff'});
-},function(){
-    $(this).children('i').css({backGround:'#1D496A'});
-});
