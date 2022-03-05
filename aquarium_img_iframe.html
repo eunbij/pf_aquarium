@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Portfolio iframe</title>
+    <!-- Favicon PC / Mobile -->
+    <link rel="shortcut icon" href="./images/favicon/aq_32.png">
+    <link rel="apple-touch-icon-precomposed" href="./images/favicon/aq_180.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body,html {
+            background-color: #8FCED9;
+        }
+        #wrap {
+            margin: 2.5px auto;
+            text-align: center;
+        }
+        #wrap {
+            width: 488px;
+            height: 901px;
+            background: url('./images/mockup.png');
+            background-size: 100%;
+            background-position: center center;
+        }
+        .iframe_box {
+            padding-top: 132px;
+            padding-left: 70px;
+        }
+        iframe {
+            display: block;
+            border-radius: 0 0 34px 34px;
+        }
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        button {
+            display: block;
+            background: #163852;
+            border: 1px solid #163852;
+            width: 160px;
+            height: 40px;
+            margin: 20px auto;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button a {
+            font-size: 18px;
+            color: #f5f5f5;
+        }
+        button:hover {
+            background: #4CBCD1;
+        }
+        button:hover a {
+            color: #163852;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h2>모바일웹코딩 포트폴리오</h2>
+    <div>
+        <button><a href="https://ebjjdev.notion.site/b8b5fc8fc5ab4c6cb8ff40b7894c8f42" target="_blank">기획서 보기</a></button>
+    </div>
+    <div id="wrap">
+        <div class="iframe_box">
+            <iframe src="./index.html" frameborder="0" width="368" height="722"></iframe>
+        </div>
+    </div>
+</body>
+</html>

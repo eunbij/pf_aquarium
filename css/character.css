@@ -28,11 +28,11 @@
 }
 #contents .charimg img {
     height: 100%;
-    margin-left: 48px;
+    margin-left: 32px;
     padding-bottom: 10px;
 }
 #contents .charname {
-    width: 65%;
+    width: 68%;
     /* 플롯 */
     float: right;
     color: #fff;

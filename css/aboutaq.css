@@ -33,5 +33,8 @@
 }
 #contents .background p+h2+p {
     font-size: 0.9rem;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
+}
+.background img {
+    width: 70px;
 }
